@@ -1,0 +1,178 @@
+{
+  "Uuid": "6c102635-fe1f-4112-ad45-ac15c2f1f975",
+  "IsCustomNode": true,
+  "Category": "Python",
+  "Description": "We get a element at a index",
+  "Name": "Python GetItemAtIndex Function",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "NodeType": "PythonScriptNode",
+      "Code": "#Created by Dalton Goodwin, for learning purposes. Please email me at dalton.c.goodwin@gmail or reach out on LinkedIn for any questions.\r\n#converts a string to a number\r\n\r\n#input a list\r\nx=IN[0]\r\n#input a int\r\ny=IN[1]\r\n\r\n#Here we create a function. The x and y in our function within the () are Arguments. I like to think of them as inputs\r\ndef GetItem(x,y):\r\n#Here we see if the list of elements is greater then the int, if so return the index.\r\n\tif len(x) > y:\r\n\t\treturn(x[y])\r\n#If not here return string\r\n\telse: \r\n\t\treturn(\"index doesn't exist\")\t\t\r\n#Output is the string as a int\r\nOUT = GetItem(x,y)\r\n",
+      "VariableInputPorts": true,
+      "Id": "38831a2b7d75433a81b0f9549ff3b4ba",
+      "Inputs": [
+        {
+          "Id": "417e76df10d84ddfa085291b8085d0bd",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "8bf0e4770e7d428180705ff117ba94af",
+          "Name": "IN[1]",
+          "Description": "Input #1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "e222e35fd8ed47528e1dcc53316c3f8b",
+          "Name": "OUT",
+          "Description": "Result of the python script",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Runs an embedded IronPython script."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
+      "NodeType": "InputNode",
+      "Parameter": {
+        "Name": "list",
+        "TypeName": "var",
+        "TypeRank": -1,
+        "DefaultValue": null,
+        "Description": ""
+      },
+      "Id": "33302b04e97a45e1b53b413d0515f709",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "ed79937a5a414a87bcbbd378331779e3",
+          "Name": "",
+          "Description": "Symbol",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A function parameter, use with custom nodes.\r\n\r\nYou can specify the type and default value for parameter. E.g.,\r\n\r\ninput : var[]..[]\r\nvalue : bool = false"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
+      "NodeType": "InputNode",
+      "Parameter": {
+        "Name": "int",
+        "TypeName": "var",
+        "TypeRank": -1,
+        "DefaultValue": null,
+        "Description": ""
+      },
+      "Id": "e917f640993f4fc781fb0ac6509d0746",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "f340de2f325248039218b95622d75be7",
+          "Name": "",
+          "Description": "Symbol",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A function parameter, use with custom nodes.\r\n\r\nYou can specify the type and default value for parameter. E.g.,\r\n\r\ninput : var[]..[]\r\nvalue : bool = false"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "ed79937a5a414a87bcbbd378331779e3",
+      "End": "417e76df10d84ddfa085291b8085d0bd",
+      "Id": "516cc5ce37bf4ff8aa856b6b16330017"
+    },
+    {
+      "Start": "f340de2f325248039218b95622d75be7",
+      "End": "8bf0e4770e7d428180705ff117ba94af",
+      "Id": "1bc4611e79d24711befc5a4c3cbe7736"
+    }
+  ],
+  "Dependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": false,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.0.3.8810",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Python GetItemAtIndex",
+        "Id": "38831a2b7d75433a81b0f9549ff3b4ba",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 984.61857218122645,
+        "Y": 350.98637727711883
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Input",
+        "Id": "33302b04e97a45e1b53b413d0515f709",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 869.60000000000014,
+        "Y": 341.6
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Input",
+        "Id": "e917f640993f4fc781fb0ac6509d0746",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 876.40000000000009,
+        "Y": 402.0
+      }
+    ],
+    "Annotations": [],
+    "X": 0.0,
+    "Y": 0.0,
+    "Zoom": 1.0
+  }
+}

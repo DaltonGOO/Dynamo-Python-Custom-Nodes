@@ -1,0 +1,128 @@
+{
+  "Uuid": "49fc9c0b-b633-4132-bec7-8585b1b8dfd2",
+  "IsCustomNode": true,
+  "Category": "Python",
+  "Description": "",
+  "Name": "Python len() Function",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
+      "NodeType": "PythonScriptNode",
+      "Code": "# Created by Dalton Goodwin, for learning purposes. Please email me at dalton.c.goodwin@gmail or reach out on LinkedIn for any questions.\r\n#returns a number of items in a list. You can think of this like being the Dynmao Count node\r\nBuildings = IN[0]\r\n\r\nOUT =len(Buildings)\r\n\r\n",
+      "VariableInputPorts": true,
+      "Id": "6b5fb7eb13304e0baa78c0b5c477f527",
+      "Inputs": [
+        {
+          "Id": "07d9421875be4c4b8e812a0d7929cf3f",
+          "Name": "IN[0]",
+          "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "a221ff0b1a00455e9707cb58473ae3e9",
+          "Name": "OUT",
+          "Description": "Result of the python script",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Runs an embedded IronPython script."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
+      "NodeType": "InputNode",
+      "Parameter": {
+        "Name": "List: var[]..[]",
+        "TypeName": "var",
+        "TypeRank": -1,
+        "DefaultValue": null,
+        "Description": ""
+      },
+      "Id": "7b70bdb436bd4f1c85dbba6748c3a2b1",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "206862c5a9064d9aaa466a546e53f607",
+          "Name": "",
+          "Description": "Symbol",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A function parameter, use with custom nodes.\r\n\r\nYou can specify the type and default value for parameter. E.g.,\r\n\r\ninput : var[]..[]\r\nvalue : bool = false"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "206862c5a9064d9aaa466a546e53f607",
+      "End": "07d9421875be4c4b8e812a0d7929cf3f",
+      "Id": "7515c115cefd46b193ab5193c108a237"
+    }
+  ],
+  "Dependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": false,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.0.3.8810",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Python len() Function",
+        "Id": "6b5fb7eb13304e0baa78c0b5c477f527",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1472.8,
+        "Y": 393.6
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Building Types List",
+        "Id": "7b70bdb436bd4f1c85dbba6748c3a2b1",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1238.9410027723948,
+        "Y": 391.60000000000008
+      }
+    ],
+    "Annotations": [],
+    "X": -1662.2072799188436,
+    "Y": -323.6301679073436,
+    "Zoom": 1.7835993623828124
+  }
+}
