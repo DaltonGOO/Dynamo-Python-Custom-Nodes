@@ -156,8 +156,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 869.60000000000014,
-        "Y": 341.6
+        "X": 806.40000000000009,
+        "Y": 328.79999999999995
       },
       {
         "ShowGeometry": true,
@@ -166,8 +166,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 876.40000000000009,
-        "Y": 402.0
+        "X": 802.0,
+        "Y": 406.0
       }
     ],
     "Annotations": [],

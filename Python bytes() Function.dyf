@@ -1,9 +1,9 @@
 {
-  "Uuid": "49fc9c0b-b633-4132-bec7-8585b1b8dfd2",
+  "Uuid": "4ca5e043-3fa9-4cfc-9f99-8d7eb94671da",
   "IsCustomNode": true,
-  "Category": "Python",
+  "Category": "Python.Functions",
   "Description": "",
-  "Name": "Python len() Function",
+  "Name": "Python bytes() Function",
   "ElementResolver": {
     "ResolutionMap": {}
   },
@@ -13,12 +13,12 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Created by Dalton Goodwin, for learning purposes. Please email me at dalton.c.goodwin@gmail or reach out on LinkedIn for any questions.\r\n#returns a number of items in a list. You can think of this like being the Dynmao Count node\r\nBuildings = IN[0]\r\n\r\nOUT =len(Buildings)\r\n\r\n",
+      "Code": "# Created by Dalton Goodwin, for learning purposes. Please email me at dalton.c.goodwin@gmail or reach out on LinkedIn for any questions.\r\n\r\n#The bytes() function returns a bytes object\r\nx = IN[0]\r\nOUT = bytes(x)",
       "VariableInputPorts": true,
-      "Id": "6b5fb7eb13304e0baa78c0b5c477f527",
+      "Id": "989cb568194b467d90d575253b60a581",
       "Inputs": [
         {
-          "Id": "07d9421875be4c4b8e812a0d7929cf3f",
+          "Id": "7a24dd2036044d6ab4ee80a7321600cb",
           "Name": "IN[0]",
           "Description": "Input #0",
           "UsingDefaultValue": false,
@@ -29,7 +29,7 @@
       ],
       "Outputs": [
         {
-          "Id": "a221ff0b1a00455e9707cb58473ae3e9",
+          "Id": "a486299b4e0246098b5cc19866db99f0",
           "Name": "OUT",
           "Description": "Result of the python script",
           "UsingDefaultValue": false,
@@ -45,17 +45,17 @@
       "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
       "NodeType": "InputNode",
       "Parameter": {
-        "Name": "List",
+        "Name": "int",
         "TypeName": "var",
         "TypeRank": -1,
         "DefaultValue": null,
         "Description": ""
       },
-      "Id": "7b70bdb436bd4f1c85dbba6748c3a2b1",
+      "Id": "562e047d68c840a9aa0fa1cc8d5d6855",
       "Inputs": [],
       "Outputs": [
         {
-          "Id": "206862c5a9064d9aaa466a546e53f607",
+          "Id": "03a64b0cf9f2457c84113c19a5a12c0d",
           "Name": "",
           "Description": "Symbol",
           "UsingDefaultValue": false,
@@ -70,9 +70,9 @@
   ],
   "Connectors": [
     {
-      "Start": "206862c5a9064d9aaa466a546e53f607",
-      "End": "07d9421875be4c4b8e812a0d7929cf3f",
-      "Id": "7515c115cefd46b193ab5193c108a237"
+      "Start": "03a64b0cf9f2457c84113c19a5a12c0d",
+      "End": "7a24dd2036044d6ab4ee80a7321600cb",
+      "Id": "929312dcf8df44948f0bfae62ca15a28"
     }
   ],
   "Dependencies": [],
@@ -101,28 +101,28 @@
     "NodeViews": [
       {
         "ShowGeometry": true,
-        "Name": "Python len() Function",
-        "Id": "6b5fb7eb13304e0baa78c0b5c477f527",
+        "Name": "Python bytes() Function",
+        "Id": "989cb568194b467d90d575253b60a581",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1472.8,
-        "Y": 390.46028145215382
+        "X": 752.0,
+        "Y": 292.80000000000018
       },
       {
         "ShowGeometry": true,
-        "Name": "Building Types List",
-        "Id": "7b70bdb436bd4f1c85dbba6748c3a2b1",
+        "Name": "Input",
+        "Id": "562e047d68c840a9aa0fa1cc8d5d6855",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1310.705998151737,
-        "Y": 391.60000000000014
+        "X": 629.60000000000014,
+        "Y": 290.40000000000009
       }
     ],
     "Annotations": [],
-    "X": -1662.2072799188436,
-    "Y": -323.6301679073436,
-    "Zoom": 1.7835993623828124
+    "X": 0.0,
+    "Y": 0.0,
+    "Zoom": 1.0
   }
 }

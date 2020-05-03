@@ -1,9 +1,9 @@
 {
-  "Uuid": "49fc9c0b-b633-4132-bec7-8585b1b8dfd2",
+  "Uuid": "33336322-7bb9-418f-96f1-7bae9abd1672",
   "IsCustomNode": true,
-  "Category": "Python",
+  "Category": "Python.Functions",
   "Description": "",
-  "Name": "Python len() Function",
+  "Name": "Python bin() Funciton",
   "ElementResolver": {
     "ResolutionMap": {}
   },
@@ -13,12 +13,12 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Created by Dalton Goodwin, for learning purposes. Please email me at dalton.c.goodwin@gmail or reach out on LinkedIn for any questions.\r\n#returns a number of items in a list. You can think of this like being the Dynmao Count node\r\nBuildings = IN[0]\r\n\r\nOUT =len(Buildings)\r\n\r\n",
+      "Code": "# Created by Dalton Goodwin, for learning purposes. Please email me at dalton.c.goodwin@gmail or reach out on LinkedIn for any questions.\r\n\r\n#This is a very simple funciton, to use. It converts a int number to a binary string prefixed with 0b\r\nx = IN[0]\r\n\r\n\r\nOUT = [bin(x), format(x, 'b')]",
       "VariableInputPorts": true,
-      "Id": "6b5fb7eb13304e0baa78c0b5c477f527",
+      "Id": "1211aac93e164d27bff7aa7377f5e898",
       "Inputs": [
         {
-          "Id": "07d9421875be4c4b8e812a0d7929cf3f",
+          "Id": "571ac99c32b64312970c6699d8cb5b47",
           "Name": "IN[0]",
           "Description": "Input #0",
           "UsingDefaultValue": false,
@@ -29,7 +29,7 @@
       ],
       "Outputs": [
         {
-          "Id": "a221ff0b1a00455e9707cb58473ae3e9",
+          "Id": "75fbe0e4ad6c4b1884af7051aeec6b01",
           "Name": "OUT",
           "Description": "Result of the python script",
           "UsingDefaultValue": false,
@@ -45,17 +45,17 @@
       "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
       "NodeType": "InputNode",
       "Parameter": {
-        "Name": "List",
+        "Name": "int",
         "TypeName": "var",
         "TypeRank": -1,
         "DefaultValue": null,
         "Description": ""
       },
-      "Id": "7b70bdb436bd4f1c85dbba6748c3a2b1",
+      "Id": "f57538ce47cf44838c446c8464377694",
       "Inputs": [],
       "Outputs": [
         {
-          "Id": "206862c5a9064d9aaa466a546e53f607",
+          "Id": "f4c24d51fe6f4e6cb42f5197d3696e5d",
           "Name": "",
           "Description": "Symbol",
           "UsingDefaultValue": false,
@@ -70,9 +70,9 @@
   ],
   "Connectors": [
     {
-      "Start": "206862c5a9064d9aaa466a546e53f607",
-      "End": "07d9421875be4c4b8e812a0d7929cf3f",
-      "Id": "7515c115cefd46b193ab5193c108a237"
+      "Start": "f4c24d51fe6f4e6cb42f5197d3696e5d",
+      "End": "571ac99c32b64312970c6699d8cb5b47",
+      "Id": "3558597844a848fb8dce46b1cac2c551"
     }
   ],
   "Dependencies": [],
@@ -101,28 +101,28 @@
     "NodeViews": [
       {
         "ShowGeometry": true,
-        "Name": "Python len() Function",
-        "Id": "6b5fb7eb13304e0baa78c0b5c477f527",
+        "Name": "Python bin() Function",
+        "Id": "1211aac93e164d27bff7aa7377f5e898",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1472.8,
-        "Y": 390.46028145215382
+        "X": 707.99999999999977,
+        "Y": 282.39999999999986
       },
       {
         "ShowGeometry": true,
-        "Name": "Building Types List",
-        "Id": "7b70bdb436bd4f1c85dbba6748c3a2b1",
+        "Name": "Input",
+        "Id": "f57538ce47cf44838c446c8464377694",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1310.705998151737,
-        "Y": 391.60000000000014
+        "X": 607.00609479863817,
+        "Y": 282.25929188247545
       }
     ],
     "Annotations": [],
-    "X": -1662.2072799188436,
-    "Y": -323.6301679073436,
-    "Zoom": 1.7835993623828124
+    "X": -261.11452499999996,
+    "Y": -100.92820499999999,
+    "Zoom": 1.33823125
   }
 }

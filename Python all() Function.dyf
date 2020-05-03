@@ -1,9 +1,9 @@
 {
-  "Uuid": "49fc9c0b-b633-4132-bec7-8585b1b8dfd2",
+  "Uuid": "db37c62e-99cf-48a8-8de6-403463cdef3f",
   "IsCustomNode": true,
-  "Category": "Python",
+  "Category": "Python.Functions",
   "Description": "",
-  "Name": "Python len() Function",
+  "Name": "Python all() Function",
   "ElementResolver": {
     "ResolutionMap": {}
   },
@@ -13,12 +13,12 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Created by Dalton Goodwin, for learning purposes. Please email me at dalton.c.goodwin@gmail or reach out on LinkedIn for any questions.\r\n#returns a number of items in a list. You can think of this like being the Dynmao Count node\r\nBuildings = IN[0]\r\n\r\nOUT =len(Buildings)\r\n\r\n",
+      "Code": "# Created by Dalton Goodwin, for learning purposes. Please email me at dalton.c.goodwin@gmail or reach out on LinkedIn for any questions.\r\n\r\n# The all() Function looks at a list of bools and retruns a true if all of them are true and a false for anything else. \r\nx = IN[0]\r\n\r\ndef all(x):\r\n\tfor element in x:\r\n\t\tif not element:\r\n\t\t\treturn False\r\n\treturn True\r\n\r\nOUT = all(x)",
       "VariableInputPorts": true,
-      "Id": "6b5fb7eb13304e0baa78c0b5c477f527",
+      "Id": "4cd8e1c0beb54b24ad36bd64ec7dc3d0",
       "Inputs": [
         {
-          "Id": "07d9421875be4c4b8e812a0d7929cf3f",
+          "Id": "c207023e930f465c9a773f10d243e661",
           "Name": "IN[0]",
           "Description": "Input #0",
           "UsingDefaultValue": false,
@@ -29,7 +29,7 @@
       ],
       "Outputs": [
         {
-          "Id": "a221ff0b1a00455e9707cb58473ae3e9",
+          "Id": "a46981bf38954e92a227002da532557f",
           "Name": "OUT",
           "Description": "Result of the python script",
           "UsingDefaultValue": false,
@@ -45,17 +45,17 @@
       "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
       "NodeType": "InputNode",
       "Parameter": {
-        "Name": "List",
+        "Name": "list",
         "TypeName": "var",
         "TypeRank": -1,
         "DefaultValue": null,
         "Description": ""
       },
-      "Id": "7b70bdb436bd4f1c85dbba6748c3a2b1",
+      "Id": "d827dafae6984427b7fe4d5cccd835ad",
       "Inputs": [],
       "Outputs": [
         {
-          "Id": "206862c5a9064d9aaa466a546e53f607",
+          "Id": "fe0451cbe42242aa9fbe5db1c2e26109",
           "Name": "",
           "Description": "Symbol",
           "UsingDefaultValue": false,
@@ -70,9 +70,9 @@
   ],
   "Connectors": [
     {
-      "Start": "206862c5a9064d9aaa466a546e53f607",
-      "End": "07d9421875be4c4b8e812a0d7929cf3f",
-      "Id": "7515c115cefd46b193ab5193c108a237"
+      "Start": "fe0451cbe42242aa9fbe5db1c2e26109",
+      "End": "c207023e930f465c9a773f10d243e661",
+      "Id": "3cf7ca9b6b88498e8d3e713776c52210"
     }
   ],
   "Dependencies": [],
@@ -101,28 +101,28 @@
     "NodeViews": [
       {
         "ShowGeometry": true,
-        "Name": "Python len() Function",
-        "Id": "6b5fb7eb13304e0baa78c0b5c477f527",
+        "Name": "Python all() Function",
+        "Id": "4cd8e1c0beb54b24ad36bd64ec7dc3d0",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1472.8,
-        "Y": 390.46028145215382
+        "X": 827.99999999999977,
+        "Y": 290.4
       },
       {
         "ShowGeometry": true,
-        "Name": "Building Types List",
-        "Id": "7b70bdb436bd4f1c85dbba6748c3a2b1",
+        "Name": "Input",
+        "Id": "d827dafae6984427b7fe4d5cccd835ad",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1310.705998151737,
-        "Y": 391.60000000000014
+        "X": 732.00000000000023,
+        "Y": 291.20000000000005
       }
     ],
     "Annotations": [],
-    "X": -1662.2072799188436,
-    "Y": -323.6301679073436,
-    "Zoom": 1.7835993623828124
+    "X": 0.0,
+    "Y": 0.0,
+    "Zoom": 1.0
   }
 }

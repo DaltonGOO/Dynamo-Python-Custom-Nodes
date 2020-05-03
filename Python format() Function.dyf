@@ -1,9 +1,9 @@
 {
-  "Uuid": "424e2e31-7590-4923-bba7-8e6929e3de06",
+  "Uuid": "67f20a4e-18f0-4c5f-9475-fa31c3ba9b14",
   "IsCustomNode": true,
-  "Category": "Python",
-  "Description": "Will return the index of a element in a list",
-  "Name": "Python index() Method",
+  "Category": "Python.Functions",
+  "Description": "",
+  "Name": "Python format() Function",
   "ElementResolver": {
     "ResolutionMap": {}
   },
@@ -13,12 +13,12 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Created by Dalton Goodwin, for learning purposes. Please email me at dalton.c.goodwin@gmail or reach out on LinkedIn for any questions.\r\n# the index method will reture the index of that element\r\nx = IN[0]\r\ny = IN[1]\r\n\r\n\r\nOUT = x.index(y)",
+      "Code": "# Created by Dalton Goodwin, for learning purposes. Please email me at dalton.c.goodwin@gmail or reach out on LinkedIn for any questions.\r\n\r\n#This method lets us concatenate elements within a string through positional formatting.\r\nx = IN[0]\r\ny = IN[1]\r\nOUT = (x.format(y))\r\n",
       "VariableInputPorts": true,
-      "Id": "f8ad5f0bc62e479fbc0c96460880df64",
+      "Id": "eadac19fa15d4264866bd3e10f3148de",
       "Inputs": [
         {
-          "Id": "75c5e9849add461d8465a18f1d33f94d",
+          "Id": "92dedc8614ae48618268535df95aaf77",
           "Name": "IN[0]",
           "Description": "Input #0",
           "UsingDefaultValue": false,
@@ -27,7 +27,7 @@
           "KeepListStructure": false
         },
         {
-          "Id": "cfdb46be92fa4aa9a4389a076ad2c7ff",
+          "Id": "bb9593dee4754025aeb6d6e5d2e370c9",
           "Name": "IN[1]",
           "Description": "Input #1",
           "UsingDefaultValue": false,
@@ -38,7 +38,7 @@
       ],
       "Outputs": [
         {
-          "Id": "b6edaae2137043079ec9ba1665e0b263",
+          "Id": "cb3ab2b1a1624872acfe93eb47b5708f",
           "Name": "OUT",
           "Description": "Result of the python script",
           "UsingDefaultValue": false,
@@ -54,17 +54,17 @@
       "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
       "NodeType": "InputNode",
       "Parameter": {
-        "Name": "list",
+        "Name": "string",
         "TypeName": "var",
         "TypeRank": -1,
         "DefaultValue": null,
         "Description": ""
       },
-      "Id": "f982c3bffbb94f70a61bdb92856d1cb6",
+      "Id": "cbacaea30a284a02b953dd2bec952be3",
       "Inputs": [],
       "Outputs": [
         {
-          "Id": "4d263b01409a41ed95613720748e4f91",
+          "Id": "35f2d0d4a5674033acabe64634be5a0d",
           "Name": "",
           "Description": "Symbol",
           "UsingDefaultValue": false,
@@ -80,17 +80,17 @@
       "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
       "NodeType": "InputNode",
       "Parameter": {
-        "Name": "int",
+        "Name": "var",
         "TypeName": "var",
         "TypeRank": -1,
         "DefaultValue": null,
         "Description": ""
       },
-      "Id": "0e3b8fb1e1c44204bea8e824d6f102f9",
+      "Id": "5c24c6c024fb43c482339eeeeada49eb",
       "Inputs": [],
       "Outputs": [
         {
-          "Id": "58847d0b8df444e6af94c621b504f3e5",
+          "Id": "2001b8a2482c40e7b84d7c866fed9c94",
           "Name": "",
           "Description": "Symbol",
           "UsingDefaultValue": false,
@@ -105,14 +105,14 @@
   ],
   "Connectors": [
     {
-      "Start": "4d263b01409a41ed95613720748e4f91",
-      "End": "75c5e9849add461d8465a18f1d33f94d",
-      "Id": "83140e8f29084855bf51a9406220b853"
+      "Start": "35f2d0d4a5674033acabe64634be5a0d",
+      "End": "92dedc8614ae48618268535df95aaf77",
+      "Id": "113f271783604c97aa632b65a7a49b76"
     },
     {
-      "Start": "58847d0b8df444e6af94c621b504f3e5",
-      "End": "cfdb46be92fa4aa9a4389a076ad2c7ff",
-      "Id": "e8a0472a5e3849c186e3329013f64c37"
+      "Start": "2001b8a2482c40e7b84d7c866fed9c94",
+      "End": "bb9593dee4754025aeb6d6e5d2e370c9",
+      "Id": "a0e53765184c4616b61058932a09475b"
     }
   ],
   "Dependencies": [],
@@ -141,38 +141,53 @@
     "NodeViews": [
       {
         "ShowGeometry": true,
-        "Name": "Python Script",
-        "Id": "f8ad5f0bc62e479fbc0c96460880df64",
+        "Name": "Python format() Function",
+        "Id": "eadac19fa15d4264866bd3e10f3148de",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 707.41035887587714,
-        "Y": 345.14162128958361
+        "X": 929.60000000000014,
+        "Y": 280.0
       },
       {
         "ShowGeometry": true,
         "Name": "Input",
-        "Id": "f982c3bffbb94f70a61bdb92856d1cb6",
+        "Id": "cbacaea30a284a02b953dd2bec952be3",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 510.40000000000009,
-        "Y": 330.4
+        "X": 817.225028805434,
+        "Y": 270.58890169130416
       },
       {
         "ShowGeometry": true,
         "Name": "Input",
-        "Id": "0e3b8fb1e1c44204bea8e824d6f102f9",
+        "Id": "5c24c6c024fb43c482339eeeeada49eb",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 440.91403887689,
-        "Y": 394.65572354211662
+        "X": 835.445567740938,
+        "Y": 327.8554915434795
       }
     ],
-    "Annotations": [],
-    "X": -101.55599999999993,
-    "Y": -43.848000000000013,
-    "Zoom": 1.1575
+    "Annotations": [
+      {
+        "Id": "f9bcd765fe00409585c3434b6154d8ec",
+        "Title": "Use {} to indicate where the var should go.",
+        "Nodes": [],
+        "Left": 779.3571095934808,
+        "Top": 225.03863098006292,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": -545.07123378008714,
+    "Y": -81.905307657412919,
+    "Zoom": 1.545620359375
   }
 }
