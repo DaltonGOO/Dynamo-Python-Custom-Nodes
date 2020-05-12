@@ -1,9 +1,9 @@
 {
-  "Uuid": "1e363152-98e2-40d8-bb79-78bfcc8ccc03",
+  "Uuid": "8e37b3f9-5244-4d58-b063-d2a981dac981",
   "IsCustomNode": true,
-  "Category": "Python.Functions",
+  "Category": "Python",
   "Description": "",
-  "Name": "Python bool() Function",
+  "Name": "Python_Dictionary",
   "ElementResolver": {
     "ResolutionMap": {}
   },
@@ -13,14 +13,23 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Created by Dalton Goodwin, for learning purposes. Please email me at dalton.c.goodwin@gmail or reach out on LinkedIn for any questions.\r\n\r\n#The bool() Function, will return true if the list has anything in it, input is true, if the input is 1. It will return false for empty list, false input, and 0.\r\nx = IN[0]\r\n\r\n\r\nOUT = bool(x)",
+      "Code": "keys = IN[0]\r\nvalues = IN[1]\r\n\r\n\r\ndictionary = dict(zip(keys, values))\r\n\r\nOUT = dictionary",
       "VariableInputPorts": true,
-      "Id": "556aa2a5df8645489b67083951dca1eb",
+      "Id": "0d860d1b989e4865bff8afbb5b39da54",
       "Inputs": [
         {
-          "Id": "f19d9d6d92954841af9f543b49f87dae",
+          "Id": "622113e00d5c4df6b41e94eb5d189f5c",
           "Name": "IN[0]",
           "Description": "Input #0",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "0d9db71023f54f509262969e3eaabe85",
+          "Name": "IN[1]",
+          "Description": "Input #1",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -29,7 +38,7 @@
       ],
       "Outputs": [
         {
-          "Id": "82c0145b8c5341bb91b7ff84263d6269",
+          "Id": "00c8d2b3cef34498a1f81264291f8c36",
           "Name": "OUT",
           "Description": "Result of the python script",
           "UsingDefaultValue": false,
@@ -45,17 +54,43 @@
       "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
       "NodeType": "InputNode",
       "Parameter": {
-        "Name": "Var",
+        "Name": "keys",
         "TypeName": "var",
         "TypeRank": -1,
         "DefaultValue": null,
         "Description": ""
       },
-      "Id": "4ba934f5129b4a37b5707cfecfaa7038",
+      "Id": "e974f42ccf39478b96a36eba2b9f21ea",
       "Inputs": [],
       "Outputs": [
         {
-          "Id": "7ab87855387e4e5ab57b81e7069f6e8d",
+          "Id": "f1aaa23b7eaf43bd95cb4e714a0977c1",
+          "Name": "",
+          "Description": "Symbol",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A function parameter, use with custom nodes.\r\n\r\nYou can specify the type and default value for parameter. E.g.,\r\n\r\ninput : var[]..[]\r\nvalue : bool = false"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
+      "NodeType": "InputNode",
+      "Parameter": {
+        "Name": "values",
+        "TypeName": "var",
+        "TypeRank": -1,
+        "DefaultValue": null,
+        "Description": ""
+      },
+      "Id": "c7749b617a4b4be1b15658ab730e494e",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "79d39920d21f4d3593b147edb15b37d0",
           "Name": "",
           "Description": "Symbol",
           "UsingDefaultValue": false,
@@ -70,9 +105,14 @@
   ],
   "Connectors": [
     {
-      "Start": "7ab87855387e4e5ab57b81e7069f6e8d",
-      "End": "f19d9d6d92954841af9f543b49f87dae",
-      "Id": "ea4a079d84a4491e8019e88a64e7364c"
+      "Start": "f1aaa23b7eaf43bd95cb4e714a0977c1",
+      "End": "622113e00d5c4df6b41e94eb5d189f5c",
+      "Id": "8b295cfd863b42dd847cc354762fa432"
+    },
+    {
+      "Start": "79d39920d21f4d3593b147edb15b37d0",
+      "End": "0d9db71023f54f509262969e3eaabe85",
+      "Id": "32152e2e379f48c6b15c1497c136429f"
     }
   ],
   "Dependencies": [],
@@ -102,28 +142,38 @@
     "NodeViews": [
       {
         "ShowGeometry": true,
-        "Name": "Python bool() Function",
-        "Id": "556aa2a5df8645489b67083951dca1eb",
+        "Name": "Python Dictionary",
+        "Id": "0d860d1b989e4865bff8afbb5b39da54",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 675.19999999999959,
-        "Y": 307.99999999999989
+        "X": 719.82178480172411,
+        "Y": 194.96175108045077
       },
       {
         "ShowGeometry": true,
         "Name": "Input",
-        "Id": "4ba934f5129b4a37b5707cfecfaa7038",
+        "Id": "e974f42ccf39478b96a36eba2b9f21ea",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 514.40000000000032,
-        "Y": 309.60000000000014
+        "X": 497.59999999999991,
+        "Y": 186.4
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Input",
+        "Id": "c7749b617a4b4be1b15658ab730e494e",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 483.60000000000014,
+        "Y": 249.19999999999993
       }
     ],
     "Annotations": [],
-    "X": -571.452689115177,
-    "Y": -322.92149000295512,
-    "Zoom": 2.0566802683342771
+    "X": 0.0,
+    "Y": 0.0,
+    "Zoom": 1.0
   }
 }

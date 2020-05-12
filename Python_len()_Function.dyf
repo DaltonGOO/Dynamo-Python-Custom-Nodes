@@ -1,9 +1,9 @@
 {
-  "Uuid": "1e363152-98e2-40d8-bb79-78bfcc8ccc03",
+  "Uuid": "4e48e341-44b7-42fa-b6e7-571d5ae389bc",
   "IsCustomNode": true,
   "Category": "Python.Functions",
   "Description": "",
-  "Name": "Python bool() Function",
+  "Name": "Python_len()_Function",
   "ElementResolver": {
     "ResolutionMap": {}
   },
@@ -13,12 +13,12 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Created by Dalton Goodwin, for learning purposes. Please email me at dalton.c.goodwin@gmail or reach out on LinkedIn for any questions.\r\n\r\n#The bool() Function, will return true if the list has anything in it, input is true, if the input is 1. It will return false for empty list, false input, and 0.\r\nx = IN[0]\r\n\r\n\r\nOUT = bool(x)",
+      "Code": "# Created by Dalton Goodwin, for learning purposes. Please email me at dalton.c.goodwin@gmail or reach out on LinkedIn for any questions.\r\n\r\n#returns a number of items in a list. You can think of this like being the Dynmao Count node\r\nx = IN[0]\r\n\r\nOUT =len(x)",
       "VariableInputPorts": true,
-      "Id": "556aa2a5df8645489b67083951dca1eb",
+      "Id": "7f492580bda24f658d8d822b73d90063",
       "Inputs": [
         {
-          "Id": "f19d9d6d92954841af9f543b49f87dae",
+          "Id": "d45f383530df4745b0ee8b1a68bf7d40",
           "Name": "IN[0]",
           "Description": "Input #0",
           "UsingDefaultValue": false,
@@ -29,7 +29,7 @@
       ],
       "Outputs": [
         {
-          "Id": "82c0145b8c5341bb91b7ff84263d6269",
+          "Id": "0965ef55be5d40418fc0a9d2f6e142fa",
           "Name": "OUT",
           "Description": "Result of the python script",
           "UsingDefaultValue": false,
@@ -45,17 +45,17 @@
       "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
       "NodeType": "InputNode",
       "Parameter": {
-        "Name": "Var",
+        "Name": "list",
         "TypeName": "var",
         "TypeRank": -1,
         "DefaultValue": null,
         "Description": ""
       },
-      "Id": "4ba934f5129b4a37b5707cfecfaa7038",
+      "Id": "a84d4a1be68049849647cc85814835ea",
       "Inputs": [],
       "Outputs": [
         {
-          "Id": "7ab87855387e4e5ab57b81e7069f6e8d",
+          "Id": "a35ca15a60b943a99b1560f15905e017",
           "Name": "",
           "Description": "Symbol",
           "UsingDefaultValue": false,
@@ -70,9 +70,9 @@
   ],
   "Connectors": [
     {
-      "Start": "7ab87855387e4e5ab57b81e7069f6e8d",
-      "End": "f19d9d6d92954841af9f543b49f87dae",
-      "Id": "ea4a079d84a4491e8019e88a64e7364c"
+      "Start": "a35ca15a60b943a99b1560f15905e017",
+      "End": "d45f383530df4745b0ee8b1a68bf7d40",
+      "Id": "7d6bc65aeb364fdab264261de120a07c"
     }
   ],
   "Dependencies": [],
@@ -102,28 +102,28 @@
     "NodeViews": [
       {
         "ShowGeometry": true,
-        "Name": "Python bool() Function",
-        "Id": "556aa2a5df8645489b67083951dca1eb",
+        "Name": "Python len() Function",
+        "Id": "7f492580bda24f658d8d822b73d90063",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 675.19999999999959,
-        "Y": 307.99999999999989
+        "X": 655.2,
+        "Y": 308.80000000000007
       },
       {
         "ShowGeometry": true,
         "Name": "Input",
-        "Id": "4ba934f5129b4a37b5707cfecfaa7038",
+        "Id": "a84d4a1be68049849647cc85814835ea",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 514.40000000000032,
-        "Y": 309.60000000000014
+        "X": 456.83455723542124,
+        "Y": 300.86565874730024
       }
     ],
     "Annotations": [],
-    "X": -571.452689115177,
-    "Y": -322.92149000295512,
-    "Zoom": 2.0566802683342771
+    "X": -89.586000000000013,
+    "Y": -50.651999999999987,
+    "Zoom": 1.1575
   }
 }

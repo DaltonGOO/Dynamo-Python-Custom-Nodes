@@ -54,8 +54,8 @@
       "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
       "NodeType": "InputNode",
       "Parameter": {
-        "Name": "string",
-        "TypeName": "var",
+        "Name": "STring",
+        "TypeName": "string",
         "TypeRank": -1,
         "DefaultValue": null,
         "Description": ""
@@ -80,7 +80,7 @@
       "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
       "NodeType": "InputNode",
       "Parameter": {
-        "Name": "var",
+        "Name": "Var",
         "TypeName": "var",
         "TypeRank": -1,
         "DefaultValue": null,
@@ -116,13 +116,14 @@
     }
   ],
   "Dependencies": [],
+  "NodeLibraryDependencies": [],
   "Bindings": [],
   "View": {
     "Dynamo": {
       "ScaleFactor": 1.0,
       "HasRunWithoutCrash": false,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.0.3.8810",
+      "Version": "2.3.0.5885",
       "RunType": "Manual",
       "RunPeriod": "1000"
     },
@@ -156,8 +157,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 817.225028805434,
-        "Y": 270.58890169130416
+        "X": 721.47059654637235,
+        "Y": 268.51853558840548
       },
       {
         "ShowGeometry": true,
@@ -166,8 +167,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 835.445567740938,
-        "Y": 327.8554915434795
+        "X": 740.72631853332564,
+        "Y": 329.40826612065342
       }
     ],
     "Annotations": [
@@ -186,8 +187,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": -545.07123378008714,
-    "Y": -81.905307657412919,
-    "Zoom": 1.545620359375
+    "X": -760.05496774037078,
+    "Y": -146.37331952462398,
+    "Zoom": 1.7835993623828124
   }
 }

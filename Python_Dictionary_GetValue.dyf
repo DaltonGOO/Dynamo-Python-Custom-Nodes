@@ -1,11 +1,16 @@
 {
-  "Uuid": "77f1ec57-12d5-46e7-adb3-98f3f9867d91",
+  "Uuid": "c1770077-f4c5-4037-a008-812af244f56c",
   "IsCustomNode": true,
-  "Category": "Python.Functions",
+  "Category": "Python",
   "Description": "",
-  "Name": "Python abs() Function",
+  "Name": "Python_Dictionary_GetValue",
   "ElementResolver": {
-    "ResolutionMap": {}
+    "ResolutionMap": {
+      "Lists.Dictionary": {
+        "Key": "Lists.Dictionary",
+        "Value": "LunchBox.dll"
+      }
+    }
   },
   "Inputs": [],
   "Outputs": [],
@@ -13,12 +18,12 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Created by Dalton Goodwin, for learning purposes. Please email me at dalton.c.goodwin@gmail or reach out on LinkedIn for any questions.\r\n\r\n#The three inputs here are a float, int, and complex value. The abs() function returns a absolute value of a number. \r\n\r\nfloat = IN[0]\r\nint = IN[1]\r\ncomplex = IN[2]\r\n\r\nOUT = [abs(float), abs(complex), abs(int)]",
+      "Code": "dictionary = IN[0]\r\nKey = IN[1]\r\n\r\nvalue = dictionary[Key]\r\n\r\nOUT = value",
       "VariableInputPorts": true,
-      "Id": "380e9a3630f24b82a83b33793a0f9a57",
+      "Id": "19f795e8007e4b889937d733a2a2189f",
       "Inputs": [
         {
-          "Id": "f4e801e2de0a419fb6f87663ecfa8117",
+          "Id": "420ec587f5f446ea825d8cf71e6bb24f",
           "Name": "IN[0]",
           "Description": "Input #0",
           "UsingDefaultValue": false,
@@ -27,18 +32,9 @@
           "KeepListStructure": false
         },
         {
-          "Id": "c0925657ca8946058a561a9b21668076",
+          "Id": "38c80533e7774c2a91ee219666fda5ad",
           "Name": "IN[1]",
           "Description": "Input #1",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "25915d102c234d0193a8f334a2bb517a",
-          "Name": "IN[2]",
-          "Description": "Input #2",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -47,7 +43,7 @@
       ],
       "Outputs": [
         {
-          "Id": "8cb4c3a60f414ef5bf1478447ba98e8f",
+          "Id": "de0f02c6fc0b47c18c6e1800356ee547",
           "Name": "OUT",
           "Description": "Result of the python script",
           "UsingDefaultValue": false,
@@ -63,69 +59,43 @@
       "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
       "NodeType": "InputNode",
       "Parameter": {
-        "Name": "Double",
-        "TypeName": "double",
-        "TypeRank": -1,
-        "DefaultValue": null,
-        "Description": ""
-      },
-      "Id": "edea103aec8b482ead1f5ea1ea00a39b",
-      "Inputs": [],
-      "Outputs": [
-        {
-          "Id": "63fcca31c5c34ffcbd5c590d94b79bc5",
-          "Name": "",
-          "Description": "Symbol",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "A function parameter, use with custom nodes.\r\n\r\nYou can specify the type and default value for parameter. E.g.,\r\n\r\ninput : var[]..[]\r\nvalue : bool = false"
-    },
-    {
-      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
-      "NodeType": "InputNode",
-      "Parameter": {
-        "Name": "Int",
-        "TypeName": "int",
-        "TypeRank": -1,
-        "DefaultValue": null,
-        "Description": ""
-      },
-      "Id": "e098606892d340af9fd6239e26b2630b",
-      "Inputs": [],
-      "Outputs": [
-        {
-          "Id": "967bad302bed437e9c6b8c1ddb160e0b",
-          "Name": "",
-          "Description": "Symbol",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "A function parameter, use with custom nodes.\r\n\r\nYou can specify the type and default value for parameter. E.g.,\r\n\r\ninput : var[]..[]\r\nvalue : bool = false"
-    },
-    {
-      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
-      "NodeType": "InputNode",
-      "Parameter": {
-        "Name": "Complex",
+        "Name": "Dict",
         "TypeName": "var",
         "TypeRank": -1,
         "DefaultValue": null,
         "Description": ""
       },
-      "Id": "f8f5bfa0b0e8454197274a3fc66c0c59",
+      "Id": "168d94b479cb448fabd84eabf2952651",
       "Inputs": [],
       "Outputs": [
         {
-          "Id": "853f04b913cb4a77a61a91b9d5788a85",
+          "Id": "fe751e71598f4f41892151570f378a86",
+          "Name": "",
+          "Description": "Symbol",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "A function parameter, use with custom nodes.\r\n\r\nYou can specify the type and default value for parameter. E.g.,\r\n\r\ninput : var[]..[]\r\nvalue : bool = false"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
+      "NodeType": "InputNode",
+      "Parameter": {
+        "Name": "keys",
+        "TypeName": "var",
+        "TypeRank": -1,
+        "DefaultValue": null,
+        "Description": ""
+      },
+      "Id": "8b0b9c47c772460f871571950184a00f",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "c1a9da6b11124103817ef8a53c4e80d9",
           "Name": "",
           "Description": "Symbol",
           "UsingDefaultValue": false,
@@ -140,19 +110,14 @@
   ],
   "Connectors": [
     {
-      "Start": "63fcca31c5c34ffcbd5c590d94b79bc5",
-      "End": "f4e801e2de0a419fb6f87663ecfa8117",
-      "Id": "571d22aa021f4ce3b00e559b41cff15d"
+      "Start": "fe751e71598f4f41892151570f378a86",
+      "End": "420ec587f5f446ea825d8cf71e6bb24f",
+      "Id": "ff529ef70ad248c49a008dc010884bd9"
     },
     {
-      "Start": "967bad302bed437e9c6b8c1ddb160e0b",
-      "End": "c0925657ca8946058a561a9b21668076",
-      "Id": "5c296b004f9048e69c716bc2db4f93ce"
-    },
-    {
-      "Start": "853f04b913cb4a77a61a91b9d5788a85",
-      "End": "25915d102c234d0193a8f334a2bb517a",
-      "Id": "3bf03a09430046a6b8b9b86d6b891e06"
+      "Start": "c1a9da6b11124103817ef8a53c4e80d9",
+      "End": "38c80533e7774c2a91ee219666fda5ad",
+      "Id": "fece1ec0a4dc4b7e8bb79e146f403f0e"
     }
   ],
   "Dependencies": [],
@@ -182,48 +147,38 @@
     "NodeViews": [
       {
         "ShowGeometry": true,
-        "Name": "Python abs() Function",
-        "Id": "380e9a3630f24b82a83b33793a0f9a57",
+        "Name": "Python Dictionary Get Value",
+        "Id": "19f795e8007e4b889937d733a2a2189f",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 829.99740820734348,
-        "Y": 188.40777537796978
+        "X": 824.4,
+        "Y": 419.6
       },
       {
         "ShowGeometry": true,
         "Name": "Input",
-        "Id": "edea103aec8b482ead1f5ea1ea00a39b",
+        "Id": "168d94b479cb448fabd84eabf2952651",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 591.313464544353,
-        "Y": 135.141885898801
+        "X": 596.5279762152137,
+        "Y": 411.38890169130406
       },
       {
         "ShowGeometry": true,
         "Name": "Input",
-        "Id": "e098606892d340af9fd6239e26b2630b",
+        "Id": "8b0b9c47c772460f871571950184a00f",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 593.314502696461,
-        "Y": 201.289009859153
-      },
-      {
-        "ShowGeometry": true,
-        "Name": "Input",
-        "Id": "f8f5bfa0b0e8454197274a3fc66c0c59",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": 588.271354445975,
-        "Y": 266.671384512604
+        "X": 592.30080655215886,
+        "Y": 475.54994238913144
       }
     ],
     "Annotations": [],
-    "X": -685.815007279176,
-    "Y": -56.267032118323272,
-    "Zoom": 1.9652445561768577
+    "X": -481.07147312500024,
+    "Y": -291.04376626249984,
+    "Zoom": 1.545620359375
   }
 }

@@ -1,9 +1,9 @@
 {
-  "Uuid": "fc941c35-3286-45ad-9dba-0a9504edc78d",
+  "Uuid": "f2bac182-0e10-4fa4-8dd6-5fa56e6e11a6",
   "IsCustomNode": true,
   "Category": "Python.Functions",
   "Description": "",
-  "Name": "Python bytearray() Function",
+  "Name": "Python_GetItemAtIndex_Function",
   "ElementResolver": {
     "ResolutionMap": {}
   },
@@ -13,12 +13,12 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Created by Dalton Goodwin, for learning purposes. Please email me at dalton.c.goodwin@gmail or reach out on LinkedIn for any questions.\r\n\r\n#1st list returns a bytearray object which is an array of given bytes\r\n#2nd list creates an array of that number size\r\nx = IN[0]\r\ny = IN[1]\r\nz = IN[2]\r\n\r\n# encoding the string with unicode 8 and 16\r\ndef utf(y):\r\n\tif y == True:\r\n\t\treturn 'utf-8'\r\n\treturn 'utf-16'\r\n#Check to see if the input is a int, if not returns a 0, which creates a empty list. \r\ndef utfint(z):\r\n\tif (isinstance(z, int)):\r\n\t\treturn int(z)\r\n\treturn 0\r\n\r\nOUT =  [[bytearray(x, utf(y))], [bytearray(utfint(z))]]\r\n",
+      "Code": "#Created by Dalton Goodwin, for learning purposes. Please email me at dalton.c.goodwin@gmail or reach out on LinkedIn for any questions.\r\n\r\n#returns a element at index\r\n\r\n#input a list\r\nx=IN[0]\r\n#input a int\r\ny=IN[1]\r\n\r\n#Here we create a function. The x and y in our function within the () are Arguments. I like to think of them as inputs\r\ndef GetItem(x,y):\r\n#Here we see if the list of elements is greater then the int, if so return the index.\r\n    if len(x) > y:\r\n        return(x[y])\r\n#If not here return string\r\n    else: \r\n        return(\"index doesn't exist\")        \r\n#Output is the string as a int\r\nOUT = GetItem(x,y)\r\n",
       "VariableInputPorts": true,
-      "Id": "a6ade29cb476405e80935a1ccb5f4b0a",
+      "Id": "c821cbdef4184f278ea00e9bde5d5f8a",
       "Inputs": [
         {
-          "Id": "ef2e62ebd838442da053825e22b0e322",
+          "Id": "406254dcd8914351a5f6677e0dd875b5",
           "Name": "IN[0]",
           "Description": "Input #0",
           "UsingDefaultValue": false,
@@ -27,18 +27,9 @@
           "KeepListStructure": false
         },
         {
-          "Id": "f3ae60a4304f4434a57ea937f91811cb",
+          "Id": "ea4c7716094649429f1bf8cf6fc04947",
           "Name": "IN[1]",
           "Description": "Input #1",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "00dda2d6ef084c388372eeb44776a8b2",
-          "Name": "IN[2]",
-          "Description": "Input #2",
           "UsingDefaultValue": false,
           "Level": 2,
           "UseLevels": false,
@@ -47,7 +38,7 @@
       ],
       "Outputs": [
         {
-          "Id": "3dffbfd5b8a642699c9fdddfb048a9a5",
+          "Id": "43076808a58a48d4b2740c569b6cf9b8",
           "Name": "OUT",
           "Description": "Result of the python script",
           "UsingDefaultValue": false,
@@ -63,43 +54,17 @@
       "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
       "NodeType": "InputNode",
       "Parameter": {
-        "Name": "STring",
-        "TypeName": "string",
+        "Name": "list",
+        "TypeName": "var",
         "TypeRank": -1,
         "DefaultValue": null,
         "Description": ""
       },
-      "Id": "7e725e1186194309a7fd49315dc01078",
+      "Id": "3324fac9ff8e4640adc5b80174ee937f",
       "Inputs": [],
       "Outputs": [
         {
-          "Id": "2d1ee1ee52c34e7c82d1caf6a19d2a84",
-          "Name": "",
-          "Description": "Symbol",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "A function parameter, use with custom nodes.\r\n\r\nYou can specify the type and default value for parameter. E.g.,\r\n\r\ninput : var[]..[]\r\nvalue : bool = false"
-    },
-    {
-      "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
-      "NodeType": "InputNode",
-      "Parameter": {
-        "Name": "Bool",
-        "TypeName": "bool",
-        "TypeRank": -1,
-        "DefaultValue": null,
-        "Description": ""
-      },
-      "Id": "278715b95ea54b79affc99f310dd2fa7",
-      "Inputs": [],
-      "Outputs": [
-        {
-          "Id": "ff186180b9d9484d97005779f0ab1583",
+          "Id": "eca05d9b6c8a46a3a577c92aab20e748",
           "Name": "",
           "Description": "Symbol",
           "UsingDefaultValue": false,
@@ -121,11 +86,11 @@
         "DefaultValue": null,
         "Description": ""
       },
-      "Id": "b8064c986e0a4aecbc2eb4cb421cac87",
+      "Id": "89e451828c854f6eaf861dd1854f7cfe",
       "Inputs": [],
       "Outputs": [
         {
-          "Id": "10f20cb72bca4d769cf9e41dc9aae9ff",
+          "Id": "fe001568ac1f42fb9940da46b483bb42",
           "Name": "",
           "Description": "Symbol",
           "UsingDefaultValue": false,
@@ -140,19 +105,14 @@
   ],
   "Connectors": [
     {
-      "Start": "2d1ee1ee52c34e7c82d1caf6a19d2a84",
-      "End": "ef2e62ebd838442da053825e22b0e322",
-      "Id": "f32722d611644a498cf99de82ca9234b"
+      "Start": "eca05d9b6c8a46a3a577c92aab20e748",
+      "End": "406254dcd8914351a5f6677e0dd875b5",
+      "Id": "e9d4a630960f4684a4a7683699f38dab"
     },
     {
-      "Start": "ff186180b9d9484d97005779f0ab1583",
-      "End": "f3ae60a4304f4434a57ea937f91811cb",
-      "Id": "e1557716a91e43deaa684e44aa4541d8"
-    },
-    {
-      "Start": "10f20cb72bca4d769cf9e41dc9aae9ff",
-      "End": "00dda2d6ef084c388372eeb44776a8b2",
-      "Id": "fba8d5d18aa544daa98d243bc35cd13f"
+      "Start": "fe001568ac1f42fb9940da46b483bb42",
+      "End": "ea4c7716094649429f1bf8cf6fc04947",
+      "Id": "a0a67c69ecca488bb8049edb1dab4d60"
     }
   ],
   "Dependencies": [],
@@ -182,48 +142,38 @@
     "NodeViews": [
       {
         "ShowGeometry": true,
-        "Name": "Python bytearray() Function",
-        "Id": "a6ade29cb476405e80935a1ccb5f4b0a",
+        "Name": "Python GetItemAtIndex Function",
+        "Id": "c821cbdef4184f278ea00e9bde5d5f8a",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 648.0,
-        "Y": 327.20000000000005
+        "X": 635.2,
+        "Y": 308.80000000000007
       },
       {
         "ShowGeometry": true,
         "Name": "Input",
-        "Id": "7e725e1186194309a7fd49315dc01078",
+        "Id": "3324fac9ff8e4640adc5b80174ee937f",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 434.71326704814237,
-        "Y": 302.00452304057831
+        "X": 419.20617505030191,
+        "Y": 293.37625346549339
       },
       {
         "ShowGeometry": true,
         "Name": "Input",
-        "Id": "278715b95ea54b79affc99f310dd2fa7",
+        "Id": "89e451828c854f6eaf861dd1854f7cfe",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 461.61573655670861,
-        "Y": 367.94760180948043
-      },
-      {
-        "ShowGeometry": true,
-        "Name": "Input",
-        "Id": "b8064c986e0a4aecbc2eb4cb421cac87",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": 468.74143227579236,
-        "Y": 428.04034733422645
+        "X": 419.6731236976392,
+        "Y": 352.39846970301062
       }
     ],
     "Annotations": [],
-    "X": -658.45100124819453,
-    "Y": -375.17747220474092,
-    "Zoom": 2.0566802683342771
+    "X": -557.29586652665625,
+    "Y": -272.06569861931246,
+    "Zoom": 1.7835993623828124
   }
 }

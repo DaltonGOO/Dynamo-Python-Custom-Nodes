@@ -1,9 +1,9 @@
 {
-  "Uuid": "1e363152-98e2-40d8-bb79-78bfcc8ccc03",
+  "Uuid": "fbe82f6b-6379-463e-b75c-939617ffd902",
   "IsCustomNode": true,
-  "Category": "Python.Functions",
+  "Category": "Python",
   "Description": "",
-  "Name": "Python bool() Function",
+  "Name": "Python_For_Loop",
   "ElementResolver": {
     "ResolutionMap": {}
   },
@@ -13,12 +13,12 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Created by Dalton Goodwin, for learning purposes. Please email me at dalton.c.goodwin@gmail or reach out on LinkedIn for any questions.\r\n\r\n#The bool() Function, will return true if the list has anything in it, input is true, if the input is 1. It will return false for empty list, false input, and 0.\r\nx = IN[0]\r\n\r\n\r\nOUT = bool(x)",
+      "Code": "# Created by Dalton Goodwin, for learning purposes. Please email me at dalton.c.goodwin@gmail or reach out on LinkedIn for any questions.\r\n\r\n#A for loop is used for iterating over a sequence\r\nx = IN[0]\r\n\r\ndef forloop(x):\r\n\tfor z in x:\r\n\t\treturn z\r\n\t\t\r\n\r\n\r\n\r\n\r\nOUT = forloop(x)",
       "VariableInputPorts": true,
-      "Id": "556aa2a5df8645489b67083951dca1eb",
+      "Id": "3cedee8f05f24e64a98528664be0f219",
       "Inputs": [
         {
-          "Id": "f19d9d6d92954841af9f543b49f87dae",
+          "Id": "9f0b59ab03e14ca8a6af7c94a172e670",
           "Name": "IN[0]",
           "Description": "Input #0",
           "UsingDefaultValue": false,
@@ -29,7 +29,7 @@
       ],
       "Outputs": [
         {
-          "Id": "82c0145b8c5341bb91b7ff84263d6269",
+          "Id": "07c971f22e574fe7b6fc69d2c6cbb659",
           "Name": "OUT",
           "Description": "Result of the python script",
           "UsingDefaultValue": false,
@@ -51,11 +51,11 @@
         "DefaultValue": null,
         "Description": ""
       },
-      "Id": "4ba934f5129b4a37b5707cfecfaa7038",
+      "Id": "dcab04a277e347bcaffde47d71bb27b1",
       "Inputs": [],
       "Outputs": [
         {
-          "Id": "7ab87855387e4e5ab57b81e7069f6e8d",
+          "Id": "d6aa282933604e0895af7b83306c4ab2",
           "Name": "",
           "Description": "Symbol",
           "UsingDefaultValue": false,
@@ -70,9 +70,9 @@
   ],
   "Connectors": [
     {
-      "Start": "7ab87855387e4e5ab57b81e7069f6e8d",
-      "End": "f19d9d6d92954841af9f543b49f87dae",
-      "Id": "ea4a079d84a4491e8019e88a64e7364c"
+      "Start": "d6aa282933604e0895af7b83306c4ab2",
+      "End": "9f0b59ab03e14ca8a6af7c94a172e670",
+      "Id": "154a797d8b08494989f51590266df575"
     }
   ],
   "Dependencies": [],
@@ -102,28 +102,28 @@
     "NodeViews": [
       {
         "ShowGeometry": true,
-        "Name": "Python bool() Function",
-        "Id": "556aa2a5df8645489b67083951dca1eb",
+        "Name": "Python Script",
+        "Id": "3cedee8f05f24e64a98528664be0f219",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 675.19999999999959,
-        "Y": 307.99999999999989
+        "X": 587.2,
+        "Y": 336.0
       },
       {
         "ShowGeometry": true,
         "Name": "Input",
-        "Id": "4ba934f5129b4a37b5707cfecfaa7038",
+        "Id": "dcab04a277e347bcaffde47d71bb27b1",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 514.40000000000032,
-        "Y": 309.60000000000014
+        "X": 384.7999999999999,
+        "Y": 336.79999999999995
       }
     ],
     "Annotations": [],
-    "X": -571.452689115177,
-    "Y": -322.92149000295512,
-    "Zoom": 2.0566802683342771
+    "X": 0.0,
+    "Y": 0.0,
+    "Zoom": 1.0
   }
 }

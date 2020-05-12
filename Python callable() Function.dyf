@@ -45,7 +45,7 @@
       "ConcreteType": "Dynamo.Graph.Nodes.CustomNodes.Symbol, DynamoCore",
       "NodeType": "InputNode",
       "Parameter": {
-        "Name": "var",
+        "Name": "Var",
         "TypeName": "var",
         "TypeRank": -1,
         "DefaultValue": null,
@@ -76,13 +76,14 @@
     }
   ],
   "Dependencies": [],
+  "NodeLibraryDependencies": [],
   "Bindings": [],
   "View": {
     "Dynamo": {
       "ScaleFactor": 1.0,
       "HasRunWithoutCrash": false,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.0.3.8810",
+      "Version": "2.3.0.5885",
       "RunType": "Manual",
       "RunPeriod": "1000"
     },
@@ -116,13 +117,13 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 615.2,
-        "Y": 323.20000000000005
+        "X": 565.59999999999991,
+        "Y": 320.0
       }
     ],
     "Annotations": [],
-    "X": 0.0,
-    "Y": 0.0,
-    "Zoom": 1.0
+    "X": -723.614647755313,
+    "Y": -314.10059191964712,
+    "Zoom": 2.0566802683342771
   }
 }
